@@ -146,7 +146,7 @@ const HeaderOne = () => {
                             </li>
                             <li className='h-full relative'>
                                 <Link
-                                    href="/Hotel"
+                                    href="/"
                                     className={`text-button duration-300 h-full flex items-center justify-center gap-1 ${pathname === '/about' ? 'active' : ''}`}
                                 >
                                    Hotels
@@ -216,8 +216,8 @@ const HeaderOne = () => {
                             </li> */}
                         </ul>
                     </div>
-                    {/* <div className="right flex items-center gap-3">
-                        <div className="weather flex items-center gap-1 max-sm:hidden">
+                    <div className="right flex items-center gap-3">
+                        {/* <div className="weather flex items-center gap-1 max-sm:hidden">
                             <Icon.CloudSun className='text-xl' />
                             <div className="text-button">18°C</div>
                         </div>
@@ -231,11 +231,11 @@ const HeaderOne = () => {
                                 <option value="GE">GE</option>
                             </select>
                             <Icon.CaretDown className='icon text-base right-0' />
-                        </div>
+                        </div> */}
                         <div className="menu-mobile-icon lg:hidden flex items-center ml-4" onClick={() => setOpenMenuMobile(true)}>
                             <Icon.List className='sm:text-xl text-2xl text-black' weight='bold' />
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
 
@@ -263,7 +263,7 @@ const HeaderOne = () => {
                             </div>
                             <div className="list-nav mt-6">
                                 <ul>
-                                    <li
+                                    {/* <li
                                         className={`${openSubNavMobile === 1 ? 'open' : ''}`}
                                         onClick={() => handleOpenSubNavMobile(1)}
                                     >
@@ -300,8 +300,8 @@ const HeaderOne = () => {
                                                 </ul>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li
+                                    </li> */}
+                                    {/* <li
                                         className={`${openSubNavMobile === 2 ? 'open' : ''}`}
                                         onClick={() => handleOpenSubNavMobile(2)}
                                     >
@@ -363,15 +363,15 @@ const HeaderOne = () => {
                                                 </ul>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li>
+                                    </li> */}
+                                    {/* <li>
                                         <Link href={'/about'} className='text-title uppercase flex items-center justify-between mt-5'>About Us
                                             <span className='text-right'>
                                                 <Icon.CaretRight size={20} />
                                             </span>
                                         </Link>
-                                    </li>
-                                    <li
+                                    </li> */}
+                                    {/* <li
                                         className={`${openSubNavMobile === 4 ? 'open' : ''}`}
                                         onClick={() => handleOpenSubNavMobile(4)}
                                     >
@@ -408,8 +408,33 @@ const HeaderOne = () => {
                                                 </ul>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li
+                                    </li> */}
+
+
+
+
+                                                    <li>
+                                                        <Link href="/" className={`nav-item-mobile text-button link text-variant1 duration-300 has-line ${pathname === '/pages/contact' ? 'active' : ''}`}>
+                                                          Home
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/about" className={`nav-item-mobile text-button link text-variant1 duration-300 has-line ${pathname === '/pages/contact' ? 'active' : ''}`}>
+                                                          About
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/Hotel" className={`nav-item-mobile text-button link text-variant1 duration-300 has-line ${pathname === '/pages/contact' ? 'active' : ''}`}>
+                                                          Hotels
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="/pages/contact" className={`nav-item-mobile text-button link text-variant1 duration-300 has-line ${pathname === '/pages/contact' ? 'active' : ''}`}>
+                                                            Contact Us
+                                                        </Link>
+                                                    </li>
+                                                   
+                                    {/* <li
                                         className={`${openSubNavMobile === 5 ? 'open' : ''}`}
                                         onClick={() => handleOpenSubNavMobile(5)}
                                     >
@@ -433,20 +458,11 @@ const HeaderOne = () => {
                                                             Contact Us
                                                         </Link>
                                                     </li>
-                                                    <li>
-                                                        <Link href="/pages/faqs" className={`nav-item-mobile text-button link text-variant1 duration-300 has-line ${pathname === '/pages/faqs' ? 'active' : ''}`}>
-                                                            FAQs
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link href="/pages/review" className={`nav-item-mobile text-button link text-variant1 duration-300 has-line ${pathname === '/pages/review' ? 'active' : ''}`}>
-                                                            Review
-                                                        </Link>
-                                                    </li>
+                                                   
                                                 </ul>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </div>
                         </div>
