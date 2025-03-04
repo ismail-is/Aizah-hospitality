@@ -26,7 +26,7 @@ const Home = () => {
         <BecomeHost />
         <Amenities />
         <Testimonial data={dataTestimonial} />
-        <News />
+        {/* <News /> */}
         <Footer />
       </div>
     </>

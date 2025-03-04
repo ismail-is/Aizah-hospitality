@@ -49,7 +49,7 @@ const HeaderOne = () => {
                     </Link>
                     <div className="menu-main h-full max-lg:hidden">
                         <ul className='flex items-center xl:gap-[50px] gap-10 h-full'>
-                            <li className='h-full relative'>
+                            {/* <li className='h-full relative'>
                                 <Link
                                     href="#!"
                                     className={`text-button duration-300 h-full flex items-center justify-center gap-1 ${pathname === '/' || pathname.includes('/homepages/') ? 'active' : ''}`}
@@ -127,6 +127,14 @@ const HeaderOne = () => {
                                         </li>
                                     </ul>
                                 </div>
+                            </li> */}
+                            <li className='h-full relative'>
+                                <Link
+                                    href="/"
+                                    className={`text-button duration-300 h-full flex items-center justify-center gap-1 ${pathname === '/about' ? 'active' : ''}`}
+                                >
+                                   Home
+                                </Link>
                             </li>
                             <li className='h-full relative'>
                                 <Link
@@ -137,6 +145,22 @@ const HeaderOne = () => {
                                 </Link>
                             </li>
                             <li className='h-full relative'>
+                                <Link
+                                    href="/Hotel"
+                                    className={`text-button duration-300 h-full flex items-center justify-center gap-1 ${pathname === '/about' ? 'active' : ''}`}
+                                >
+                                   Hotels
+                                </Link>
+                            </li>
+                            <li className='h-full relative'>
+                                <Link
+                                    href="/pages/contact"
+                                    className={`text-button duration-300 h-full flex items-center justify-center gap-1 ${pathname === '/about' ? 'active' : ''}`}
+                                >
+                                   contact
+                                </Link>
+                            </li>
+                            {/* <li className='h-full relative'>
                                 <Link
                                     href="#!"
                                     className={`text-button duration-300 h-full flex items-center justify-center gap-1 ${pathname.includes('/blog/') ? 'active' : ''}`}
@@ -162,8 +186,8 @@ const HeaderOne = () => {
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
-                            <li className='h-full relative'>
+                            </li> */}
+                            {/* <li className='h-full relative'>
                                 <Link
                                     href="#!"
                                     className={`text-button duration-300 h-full flex items-center justify-center gap-1 ${pathname.includes('/pages/') ? 'active' : ''}`}
@@ -189,10 +213,10 @@ const HeaderOne = () => {
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
-                    <div className="right flex items-center gap-3">
+                    {/* <div className="right flex items-center gap-3">
                         <div className="weather flex items-center gap-1 max-sm:hidden">
                             <Icon.CloudSun className='text-xl' />
                             <div className="text-button">18°C</div>
@@ -211,7 +235,7 @@ const HeaderOne = () => {
                         <div className="menu-mobile-icon lg:hidden flex items-center ml-4" onClick={() => setOpenMenuMobile(true)}>
                             <Icon.List className='sm:text-xl text-2xl text-black' weight='bold' />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

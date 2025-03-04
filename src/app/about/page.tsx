@@ -57,7 +57,7 @@ const About = () => {
             <Amenities />
             <Benefit />
             <Testimonial data={testimonialData} />
-            <div className="team-block lg:pt-20 md:pt-14 pt-10">
+            {/* <div className="team-block lg:pt-20 md:pt-14 pt-10">
                 <div className="container">
                     <TextHeading title='Meet our Team' subTitle='Our team of Glamping enthusiasts and experts is at the heart of our mission' />
                     <div className="list grid md:grid-cols-3 gap-[30px] md:mt-10 mt-6">
@@ -132,7 +132,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="cta-block lg:my-20 md:my-14 my-10">
                 <div className="container">
                     <div className="content-main bg-surface sm:py-10 py-8 lg:px-[60px] sm:px-10 px-8 rounded-[20px] sm:flex items-center justify-between">
